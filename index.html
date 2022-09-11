@@ -50,7 +50,7 @@
         <section class="hero section">
             <div class="container">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="btn main-btn" type="button">Замовити послугу</button>
+                <button data-modal-open class="btn main-btn" type="button">Замовити послугу</button>
             </div>
         </section>
         <section class="features section">
@@ -103,21 +103,22 @@
                         Чим ми займаємося
                     </h2>
                     <ul class="list work-process-list">
-                        <li class="list-item">
-                            <img src="./images/studio/img-1.jpg" alt="programer working his desk office" class="img" width="370"
-                                height="294">
+                        <li class="list-item list-thumb">
+                            <img src="./images/studio/img-1.jpg" alt="programer working his desk office" class="img" width="370" height="294">
+                            <h3 class="name-thumb">Десктопні додатки</h3>
                         </li>
             
-                        <li class="list-item">
+                        <li class="list-item list-thumb">
                             <img src="./images/studio/img-2.jpg"
-                                alt="designers are developing application smartphones team creators is working interface mobile phones"
-                                class="img" width="370" height="294">
+                            alt="designers are developing application smartphones team creators is working interface mobile phones" class="img"
+                            width="370" height="294">
+                            <h3 class="name-thumb">Мобільні додатки</h3>
                         </li>
             
-                        <li class="list-item">
-                            <img src="./images/studio/img-3.jpg"
-                                alt="creative artist web design with working colour selection graphic tablet" class="img"
-                                width="370" height="294">
+                        <li class="list-item list-thumb">
+                            <img src="./images/studio/img-3.jpg" alt="creative artist web design with working colour selection graphic tablet"
+                            class="img" width="370" height="294">
+                            <h3 class="name-thumb">Дизайнерські рішення</h3>
                         </li>
                     </ul>
                 </div>
@@ -328,5 +329,18 @@
             </div>
         </div>
     </footer>
+
+    <!-- modal window -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button data-modal-close class="modal-btn" type="button">
+                <svg width="11" height="11">
+                    <use href="./images/icons.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
